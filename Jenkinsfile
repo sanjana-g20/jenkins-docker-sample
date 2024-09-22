@@ -2,14 +2,14 @@ pipeline {
     agent any
 
     environment {
-        registry = "sanjanag20/jenkins-docker-sample"
+        registry = "sanjana-g20/jenkins-docker-sample"
         registryCredential = 'dockerhub'
         dockerImage = ''
     }
     stages {
         stage('Cloning Git') {
             steps {
-                git 'https://github.com/yourusername/yourrepository.git'
+                git 'https://github.com/sanjana-g20/jenkins-docker-sample.git'
             }
         }
         stage('Building Docker Image') {
