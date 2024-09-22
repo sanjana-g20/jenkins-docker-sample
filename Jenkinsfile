@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('Cloning Git') {
             steps {
-                git 'https://github.com/sanjana-g20/jenkins-docker-sample.git'
+                git "https://github.com/sanjana-g20/jenkins-docker-sample"
             }
         }
         stage('Building Docker Image') {
