@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        registry = "sanjana-g20/jenkins-docker-sample"
+        registry = "sanjanag20/jenkins-docker-sample"
         registryCredential = 'dockerhub'
         dockerImage = ''
     }
