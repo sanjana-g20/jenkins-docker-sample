@@ -7,6 +7,11 @@ pipeline {
         dockerImage = ''
     }
     stages {
+        stage ('Git Checkout') {
+             steps {
+                git branch: 'main', url: 'https://SHA256:bqo1Lk35ijcAa7wnKa+E203IC3ZgcT8EE8uFoeq1dxQ@github.com/sanjana-g20/jenkins-docker-sample.git'
+            }
+        }
         stage('Cloning Git') {
             steps {
                 git "https://github.com/sanjana-g20/jenkins-docker-sample"
